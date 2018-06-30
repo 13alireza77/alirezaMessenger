@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="settings" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #FCFFA4;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.settingController">
+    <children>
+        <ImageView fitHeight="25.0" fitWidth="49.0" layoutX="168.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/settingsProfile.png" />
+            </image>
+        </ImageView>
+        <Separator layoutX="14.0" layoutY="30.0" prefWidth="150.0" />
+        <TextField fx:id="userName" layoutX="15.0" layoutY="155.0" prefWidth="100.0" style="-fx-background-color: gold;" />
+        <TextField fx:id="passWord" layoutX="15.0" layoutY="220.0" prefWidth="100.0" style="-fx-background-color: gold;" />
+        <ImageView fx:id="profileIm" fitHeight="47.0" fitWidth="47.0" layoutX="81.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/user.png" />
+         </image></ImageView>
+        <Label layoutX="74.0" layoutY="132.0" text="user name">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="197.0" text="password">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="setUn" layoutX="137.0" layoutY="155.0" mnemonicParsing="false" onAction="#setUn" style="-fx-background-color: orange;" text="Set UN" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="setPw" layoutX="138.0" layoutY="221.0" mnemonicParsing="false" onAction="#setPw" style="-fx-background-color: orange;" text="Set PW" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="logOut" layoutX="72.0" layoutY="259.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: red;" text="Log Out" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="setIm" layoutX="77.0" layoutY="95.0" mnemonicParsing="false" onAction="#setIm" style="-fx-background-color: orange;" text="Set IM" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="67.0" layoutY="33.0" text="Profile Image">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="163.0" layoutY="270.0" mnemonicParsing="false" onAction="#setting" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/back-arrow.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+      <Label fx:id="nameLable" layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="150.0" />
+      <Separator layoutX="52.0" layoutY="130.0" prefWidth="100.0" style="-fx-background-color: black;" />
+      <Separator layoutX="52.0" layoutY="195.0" prefWidth="100.0" style="-fx-background-color: black;" />
+    </children>
+</AnchorPane>

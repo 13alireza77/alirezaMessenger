@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="welcome" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: gold;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.baseController">
+   <children>
+      <Label layoutX="183.0" layoutY="26.0" text="Welcome" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="198.0" prefHeight="69.0" prefWidth="14.0" text=".">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="252.0" text="Hope get good idea and make good memories">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="175.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/Eclipse-1.2s-200px.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

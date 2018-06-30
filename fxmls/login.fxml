@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.loginController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Separator layoutX="50.0" layoutY="370.0" prefHeight="5.0" prefWidth="600.0" />
+            <Button fx:id="login" layoutX="324.0" layoutY="300.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: gold;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font></Button>
+            <TextField fx:id="userName" layoutX="350.0" layoutY="154.0" prefHeight="25.0" prefWidth="195.0" />
+            <PasswordField fx:id="password" layoutX="350.0" layoutY="208.0" prefHeight="25.0" prefWidth="195.0" />
+            <Label layoutX="132.0" layoutY="158.0" text="User Name :">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="212.0" text="Password :">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font></Label>
+            <Label layoutX="221.0" layoutY="393.0" text="Not Registered Yet? Sign Up Here">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font></Label>
+            <Button fx:id="signUp" layoutX="313.0" layoutY="510.0" mnemonicParsing="false" onAction="#signUp" style="-fx-background-color: orange;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="215.0" layoutY="39.0" text="TelePATHY" textFill="GOLD">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

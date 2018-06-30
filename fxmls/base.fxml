@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="base" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.baseController">
+   <children>
+      <ListView layoutX="650.0" prefHeight="600.0" prefWidth="50.0" style="-fx-background-color: gold;" />
+      <Separator layoutX="449.0" layoutY="56.0" orientation="VERTICAL" prefHeight="544.0" prefWidth="0.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="searchText" layoutX="450.0" layoutY="31.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #FCFFA4;" />
+      <Button layoutX="618.0" layoutY="31.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/magnifier-tool.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="person" layoutX="450.0" layoutY="2.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="65.0" style="-fx-background-color: orange;" text="Person" textFill="WHITE" />
+      <Button fx:id="group" layoutX="518.0" layoutY="2.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="65.0" style="-fx-background-color: orange;" text="Group" textFill="WHITE" />
+      <Button fx:id="all" layoutX="586.0" layoutY="2.0" mnemonicParsing="false" onAction="#all" prefHeight="4.0" prefWidth="65.0" style="-fx-background-color: orange;" text="All" textFill="WHITE" />
+      <Button layoutX="650.0" mnemonicParsing="false" onAction="#setting" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/settings.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="600.0" fitWidth="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/pexels-photo-9888731.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="selectChat" layoutX="169.0" layoutY="239.0" text="Select Chat" textFill="ORANGE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <VBox fx:id="userList" layoutX="450.0" layoutY="56.0" prefHeight="544.0" prefWidth="200.0" style="-fx-background-color: #E7FEFF;">
+         <children>
+            <ScrollBar orientation="VERTICAL" prefHeight="552.0" prefWidth="14.0" style="-fx-background-color: transparent;" />
+         </children></VBox>
+   </children>
+</AnchorPane>
